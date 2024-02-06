@@ -1,3 +1,6 @@
+
+This readme is for the template I am using, it's not my README, see readme.md for that. 
+
 ==================================================================================================
 
 DESCRIPTION:
