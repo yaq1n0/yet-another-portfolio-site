@@ -83,17 +83,22 @@
  * ------------------------------------------------------------------- */
 
 /* ------------------------------------------------------------------- 
- * ## fonts 
+ * ## FONTS
  * ------------------------------------------------------------------- */
+
+ /* importing google fonts api stylesheet*/
+ /* the included monica fonts */
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600&display=swap");
 
-:root {
-	--font-1: "Roboto Flex", sans-serif;
-	--font-2: "DM Serif Display", Serif;
+/* the much better and improved custom jetbrains mono font */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-  /* monospace
-   */
-	--font-mono: Consolas, "Andale Mono", Courier, "Courier New", monospace;
+:root {
+	/* jetbrains mono everywhere for now */
+	/* TODO: maybe change this to have different fonts in other places? mono does go everywhere though */
+	--font-1: "Jetbrains Mono", sans-serif;
+	--font-2: "Jetbrains Mono", Serif;
+	--font-mono: "Jetbrains Mono", monospace;
 }
 
 /* ------------------------------------------------------------------- 
