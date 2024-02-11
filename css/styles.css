@@ -105,16 +105,16 @@
  * ## colors
  * ------------------------------------------------------------------- */
 :root {
-  /* color-1(#EA9010)
-   * color-2(#343D35)
-   * color-3(#FEF5E4)
-   */
-	--color-1: hsla(35, 87%, 49%, 1);
-	--color-2: hsla(127, 8%, 22%, 1);
-	--color-3: hsla(39, 93%, 95%, 1);
 
-  /* theme color variations
-   */
+   /* changing just these seems to change everything */
+   	--color-1: hsla(210, 66%, 80%, 1);
+	--color-2: hsla(265, 33%, 66%, 1);
+	--color-3: hsla(0, 0%, 100%, 0.9);
+
+  /* theme color variations */
+  /* these don't seem to be used that often, see references/usages */
+
+
 	--color-1-lightest             : hsla(35, 87%, 96%, 1);
 	--color-1-lighter              : hsla(35, 87%, 69%, 1);
 	--color-1-light                : hsla(35, 87%, 59%, 1);
