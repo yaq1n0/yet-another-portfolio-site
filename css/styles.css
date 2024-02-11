@@ -113,26 +113,27 @@
 
   /* theme color variations */
   /* these don't seem to be used that often, see references/usages */
-  color-1-lightest: hsla(210, 33%, 90%, 1);
-  color-1-lighter: hsla(210, 33%, 82%, 1); 
-  color-1-light: hsla(210, 33%, 74%, 1);   
-  color-1-dark: hsla(210, 33%, 58%, 1);    
-  color-1-darker: hsla(210, 33%, 50%, 1);  
-  color-1-darkest: hsla(210, 33%, 42%, 1); 
+  --color-1-lightest: hsla(210, 33%, 90%, 1);
+  --color-1-lighter: hsla(210, 33%, 82%, 1); 
+  --color-1-light: hsla(210, 33%, 74%, 1);   
+  --color-1-dark: hsla(210, 33%, 58%, 1);    
+  --color-1-darker: hsla(210, 33%, 50%, 1);  
+  --color-1-darkest: hsla(210, 33%, 10%, 1); 
 
-  color-2-lightest: hsla(265, 33%, 90%, 1);
-  color-2-lighter: hsla(265, 33%, 82%, 1); 
-  color-2-light: hsla(265, 33%, 74%, 1);   
-  color-2-dark: hsla(265, 33%, 58%, 1);
-  color-2-darker: hsla(265, 33%, 50%, 1);
-  color-2-darkest: hsla(265, 33%, 42%, 1);
-  
-  color-3-lightest: hsla(120, 33%, 90%, 1);
-  color-3-lighter: hsla(120, 33%, 82%, 1);
-  color-3-light: hsla(120, 33%, 74%, 1);
-  color-3-dark: hsla(120, 33%, 58%, 1);
-  color-3-darker: hsla(120, 33%, 50%, 1);
-  color-3-darkest: hsla(120, 33%, 42%, 1);
+
+  --color-2-lightest: hsla(265, 33%, 90%, 1);
+  --color-2-lighter: hsla(265, 33%, 82%, 1); 
+  --color-2-light: hsla(265, 33%, 74%, 1);   
+  --color-2-dark: hsla(265, 33%, 58%, 1);
+  --color-2-darker: hsla(265, 33%, 50%, 1);
+  --color-2-darkest: hsla(265, 33%, 10%, 1);
+
+  --color-3-lightest: hsla(120, 33%, 90%, 1);
+  --color-3-lighter: hsla(120, 33%, 82%, 1);
+  --color-3-light: hsla(120, 33%, 74%, 1);
+  --color-3-dark: hsla(120, 33%, 58%, 1);
+  --color-3-darker: hsla(120, 33%, 50%, 1);
+  --color-3-darkest: hsla(120, 33%, 42%, 1);
 
 
 
@@ -179,10 +180,10 @@
 
   /* text
    */
-	--color-text                   : var(--color-gray-18);
-	--color-text-dark              : #181818;
-	--color-text-light             : var(--color-gray-14);
-	--color-placeholder            : var(--color-gray-12);
+	--color-text                   : var(--color-gray-16);
+	--color-text-dark              : var(--color-gray-18);
+	--color-text-light             : var(--color-gray-8);
+	--color-placeholder            : var(--color-white);
 
   /* link
    */
@@ -197,17 +198,17 @@
 	--color-btn-hover              : var(--color-gray-5);
 	--color-btn-hover-text         : var(--color-text);
 	--color-btn-primary            : var(--color-1);
-	--color-btn-primary-text       : var(--color-2-dark);
+	--color-btn-primary-text       : var(--color-2-darker);
 	--color-btn-primary-hover      : var(--color-1-light);
-	--color-btn-primary-hover-text : var(--color-2-dark);
-	--color-btn-stroke             : var(--color-text-dark);
-	--color-btn-stroke-text        : var(--color-text-dark);
-	--color-btn-stroke-hover       : var(--color-text-dark);
+	--color-btn-primary-hover-text : var(--color-2-darker);
+	--color-btn-stroke             : var(--color-text-light);
+	--color-btn-stroke-text        : var(--color-text-light);
+	--color-btn-stroke-hover       : var(--color-text-light);
 	--color-btn-stroke-hover-text  : var(--color-white);
 
   /* preloader
    */
-	--color-preloader-bg           : var(--color-2-dark);
+	--color-preloader-bg           : var(--color-2-darkest);
 	--color-loader                 : var(--color-white);
 	--color-loader-light           : var(--color-2-light);
 
@@ -1253,7 +1254,7 @@ h6,
 .h6 {
 	font-family           : var(--font-2);
 	font-weight           : 400;
-	color                 : var(--color-text-dark);
+	color                 : var(--color-text-light);
 	font-variant-ligatures: common-ligatures;
 	text-rendering        : optimizeLegibility;
 }
@@ -1352,7 +1353,7 @@ i {
 strong,
 b {
 	font-weight: 600;
-	color      : var(--color-text-dark);
+	color      : var(--color-text-light);
 }
 
 small {
@@ -1366,7 +1367,7 @@ small {
 blockquote {
 	margin     : 0 0 var(--vspace-1) 0;
 	padding    : var(--vspace-1) var(--vspace-1_5);
-	border-left: 2px solid var(--color-text-dark);
+	border-left: 2px solid var(--color-text-light);
 	position   : relative;
 }
 
@@ -1376,7 +1377,7 @@ blockquote p {
 	font-size  : var(--text-lg);
 	font-style : normal;
 	line-height: var(--vspace-1_25);
-	color      : var(--color-text-dark);
+	color      : var(--color-text-light);
 	padding    : 0;
 }
 
@@ -1486,7 +1487,7 @@ abbr {
 	font-variant  : small-caps;
 	text-transform: lowercase;
 	letter-spacing: 0.1em;
-	color         : var(--color-text-dark);
+	color         : var(--color-text-light);
 }
 
 abbr[title],
@@ -1559,7 +1560,7 @@ hr.fancy::before {
 
 .pull-quote blockquote p {
 	font-weight: 400;
-	color      : var(--color-text-dark);
+	color      : var(--color-text-light);
 }
 
 .pull-quote blockquote:before {
@@ -1586,7 +1587,7 @@ hr.fancy::before {
 	padding       : 0 0.125em 0 0;
 	text-transform: uppercase;
 	background    : transparent;
-	color         : var(--color-text-dark);
+	color         : var(--color-text-light);
 }
 
 .text-center {
@@ -2102,7 +2103,7 @@ legend {
 	font-size    : var(--text-sm);
 	line-height  : var(--vspace-0_5);
 	margin-bottom: var(--vspace-0_5);
-	color        : var(--color-text-dark);
+	color        : var(--color-text-light);
 	display      : block;
 }
 
@@ -2306,7 +2307,7 @@ td {
 
 th {
 	padding    : var(--vspace-0_5) 3.2rem;
-	color      : var(--color-text-dark);
+	color      : var(--color-text-light);
 	font-family: var(--font-1);
 	font-weight: 600;
 }
@@ -2367,21 +2368,21 @@ td:last-child {
 	padding      : 0.2rem 1.2rem;
 	height       : var(--pgn-num-height);
 	margin       : 0.2rem 0.2rem;
-	color        : var(--color-text-dark);
+	color        : var(--color-text-light);
 	border-radius: var(--border-radius);
 	transition   : all, 0.3s, ease-in-out;
 }
 
 .pgn__num:focus,
 .pgn__num:hover {
-	background: var(--color-text-dark);
+	background: var(--color-text-light);
 	color     : var(--color-white);
 }
 
 .pgn .current,
 .pgn .current:focus,
 .pgn .current:hover {
-	background: var(--color-text-dark);
+	background: var(--color-text-light);
 	color     : var(--color-white);
 }
 
@@ -2418,7 +2419,7 @@ td:last-child {
 .pgn__prev:hover,
 .pgn__next:focus,
 .pgn__next:hover {
-	background: var(--color-text-dark);
+	background: var(--color-text-light);
 }
 
 .pgn__prev svg,
@@ -2430,7 +2431,7 @@ td:last-child {
 
 .pgn__prev svg path,
 .pgn__next svg path {
-	fill: var(--color-text-dark);
+	fill: var(--color-text-light);
 }
 
 .pgn__prev:focus svg path,
@@ -2732,7 +2733,7 @@ td:last-child {
 	font-weight: 600;
 	line-height: var(--vspace-1_5);
 	border     : none;
-	color      : var(--color-text-dark);
+	color      : var(--color-text-light);
 }
 
 .stats-tabs li a:hover {
@@ -2783,7 +2784,7 @@ td:last-child {
 	font-size     : var(--text-display-2);
 	line-height   : 1.0606;
 	letter-spacing: -0.012em;
-	color         : var(--color-text-dark);
+	color         : var(--color-text-light);
 	margin-top    : 0;
 	margin-bottom : var(--vspace-1_5);
 }
@@ -2825,7 +2826,7 @@ td:last-child {
 
 .list-items__item-title,
 .list-items__item-small-title {
-	color     : var(--color-text-dark);
+	color     : var(--color-text-light);
 	margin-top: 0;
 }
 
@@ -2912,7 +2913,7 @@ td:last-child {
 }
 
 .blog-card__title a {
-	color: var(--color-text-dark);
+	color: var(--color-text-light);
 }
 
 /* --------------------------------------------------------------------
@@ -2981,7 +2982,7 @@ td:last-child {
 	font-size  : calc(var(--text-size) * 0.9);
 	font-weight: 500;
 	line-height: var(--vspace-0_75);
-	color      : var(--color-text-dark);
+	color      : var(--color-text-light);
 }
 
 .testimonials__cite span {
@@ -3266,6 +3267,7 @@ td:last-child {
 	flex-flow : row nowrap;
 	margin    : 0 4rem 0 0;
 	padding   : 0;
+	color 	  : var(--color-2);
 }
 
 .s-header__menu-links li {
@@ -3589,8 +3591,7 @@ td:last-child {
 	--content-padding-bottom: 10.8rem;
 	--content-min-height    : calc(var(--vspace-1) * 27);
 	z-index                 : 2;
-	background-color        : var(--color-2-dark);
-	background              : linear-gradient(20deg, hsl(130deg, 8%, 14%) 40%, hsl(0deg, 0%, 13%) 100%);
+	background-color        : hsla(210, 33%, 10%, 1);
 	width                   : 100%;
 	height                  : max(var(--content-min-height), 100vh);
 	overflow                : hidden;
@@ -3958,7 +3959,7 @@ td:last-child {
 .s-about {
 	padding-top     : var(--vspace-6);
 	padding-bottom  : var(--vspace-6);
-	background-color: var(--color-2-dark);
+	background-color: var(--color-1-darkest);
 	color           : var(--color-3);
 }
 
@@ -4010,6 +4011,8 @@ td:last-child {
 	.s-about {
 		padding-top   : var(--vspace-4);
 		padding-bottom: var(--vspace-5);
+		color           : var(--color-3);
+		background-color: var(--color-1-darkest);
 	}
 
 	.s-about__content-imgbg {
@@ -4028,6 +4031,9 @@ td:last-child {
 .s-expertise {
 	padding-top   : var(--vspace-6);
 	padding-bottom: var(--vspace-5);
+	color           : var(--color-3);
+	background-color: var(--color-2-darkest);
+	
 }
 
 .s-expertise__content-main {
@@ -4667,7 +4673,7 @@ td:last-child {
 	list-style : none;
 	font-size  : calc(var(--text-size) * 0.95);
 	font-weight: 400;
-	color      : var(--color-text-dark);
+	color      : var(--color-text-light);
 	border-top : 1px dotted var(--color-border);
 	margin-top : calc(var(--vspace-0_25) * -1);
 	margin-left: 0;
