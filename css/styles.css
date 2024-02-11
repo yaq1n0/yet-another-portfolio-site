@@ -116,16 +116,16 @@
   --color-1-lightest: hsla(210, 33%, 90%, 1);
   --color-1-lighter: hsla(210, 33%, 82%, 1); 
   --color-1-light: hsla(210, 33%, 74%, 1);   
-  --color-1-dark: hsla(210, 33%, 58%, 1);    
-  --color-1-darker: hsla(210, 33%, 50%, 1);  
+  --color-1-dark: hsla(210, 33%, 40%, 1);    
+  --color-1-darker: hsla(210, 33%, 30%, 1);  
   --color-1-darkest: hsla(210, 33%, 10%, 1); 
 
 
   --color-2-lightest: hsla(265, 33%, 90%, 1);
   --color-2-lighter: hsla(265, 33%, 82%, 1); 
   --color-2-light: hsla(265, 33%, 74%, 1);   
-  --color-2-dark: hsla(265, 33%, 58%, 1);
-  --color-2-darker: hsla(265, 33%, 50%, 1);
+  --color-2-dark: hsla(265, 33%, 40%, 1);
+  --color-2-darker: hsla(265, 33%, 30%, 1);
   --color-2-darkest: hsla(265, 33%, 10%, 1);
 
   --color-3-lightest: hsla(120, 33%, 90%, 1);
@@ -197,10 +197,10 @@
 	--color-btn-text               : var(--color-text);
 	--color-btn-hover              : var(--color-gray-5);
 	--color-btn-hover-text         : var(--color-text);
-	--color-btn-primary            : var(--color-1);
-	--color-btn-primary-text       : var(--color-2-darker);
-	--color-btn-primary-hover      : var(--color-1-light);
-	--color-btn-primary-hover-text : var(--color-2-darker);
+	--color-btn-primary            : var(--color-1-dark);
+	--color-btn-primary-text       : var(--color-text-light);
+	--color-btn-primary-hover      : var(--color-1);
+	--color-btn-primary-hover-text : var(--color-text);
 	--color-btn-stroke             : var(--color-text-light);
 	--color-btn-stroke-text        : var(--color-text-light);
 	--color-btn-stroke-hover       : var(--color-text-light);
@@ -4032,7 +4032,7 @@ td:last-child {
 	padding-top   : var(--vspace-6);
 	padding-bottom: var(--vspace-5);
 	color           : var(--color-3);
-	background-color: var(--color-2-darkest);
+	background-color: var(--color-1-darkest);
 	
 }
 
