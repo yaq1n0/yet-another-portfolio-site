@@ -1,0 +1,203 @@
+
+/* import Jetbrains Mono font */
+/* for some reason, order doesn't matter in CSS, but imports do need to be first, which makes sense, but I don't like it :) */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    /* universal font-families */
+    --font-1: "JetBrains Mono", monospace; 
+
+    /* universal site color variables */ 
+    --background-color: hsl(0, 0%, 10%);
+    --background-color-inverse: hsl(0, 0%, 90%);
+    --text-color: hsl(0, 0%, 90%);
+    --text-color-inverse: hsl(0, 0%, 10%);
+
+    --nav-bar-color: hsl(0, 0%, 15%);
+    --nav-bar-hover: hsl(0, 0%, 20%);
+
+    --theme-color-1-h: 210;
+    --theme-color-1-s: 50%;
+    --theme-color-1-l: 66%;
+    --theme-color-1-a: 1;
+
+    --theme-color-2-h: 265;
+    --theme-color-2-s: 50%;
+    --theme-color-2-l: 66%;
+    --theme-color-2-a: 1;
+
+    --theme-color-3-h: 120;
+    --theme-color-3-s: 50%;
+    --theme-color-3-l: 66%;
+    --theme-color-3-a: 1;
+
+    --theme-color-1: hsla(var(--theme-color-1-h), var(--theme-color-1-s), var(--theme-color-1-l), var(--theme-color-1-a));
+    --theme-color-2: hsla(var(--theme-color-2-h), var(--theme-color-2-s), var(--theme-color-2-l), var(--theme-color-2-a));
+    --theme-color-3: hsla(var(--theme-color-3-h), var(--theme-color-3-s), var(--theme-color-3-l), var(--theme-color-3-a));
+
+    --theme-color-1-dark: hsla(var(--theme-color-1-h), var(--theme-color-1-s), calc(var(--theme-color-1-l) - 15%), var(--theme-color-1-a));
+    --theme-color-2-dark: hsla(var(--theme-color-2-h), var(--theme-color-2-s), calc(var(--theme-color-2-l) - 15%), var(--theme-color-2-a));
+    --theme-color-3-dark: hsla(var(--theme-color-3-h), var(--theme-color-3-s), calc(var(--theme-color-3-l) - 15%), var(--theme-color-3-a));
+
+    --theme-color-1-light: hsla(var(--theme-color-1-h), var(--theme-color-1-s), calc(var(--theme-color-1-l) + 15%), var(--theme-color-1-a));
+    --theme-color-2-light: hsla(var(--theme-color-2-h), var(--theme-color-2-s), calc(var(--theme-color-2-l) + 15%), var(--theme-color-2-a));
+    --theme-color-3-light: hsla(var(--theme-color-3-h), var(--theme-color-3-s), calc(var(--theme-color-3-l) + 15%), var(--theme-color-3-a));
+
+    --about-button-color: var(--theme-color-3);
+    --about-button-hover: var(--theme-color-3-dark);
+
+    --contact-button-color: var(--theme-color-1);
+    --contact-button-hover: var(--theme-color-1-dark);
+
+    /* "responsive" font sizing */ 
+    /* 
+    vw means relative to 1% of the width of the viewport
+    vh means relative to 1% of the height of the viewport 
+    */
+
+    /* scale the max font size to 2% of the viewport width, but keep it above 12px and below 24px */
+    /* in theory max(<mininum size in pixels>, min(<scaling to viewport width>, <max size in pixels>)) */
+    --base-font-size: max(16px, min(2vw, 24px));
+    --large-font-size: max(20px, min(3vw, 48px));
+    --small-font-size: max(12px, min(2vw, 18px));
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-1);
+    font-size: var(--base-font-size);
+}
+
+h1 {
+    font-size: var(--large-font-size);
+    color: var(--theme-color-3-light);
+    float: left;
+    text-align: left;
+    padding-left: 2%;
+    width: 100%;
+}
+
+p {
+    font-size: var(--small-font-size);
+    text-align: center; 
+    width: 100%;
+}
+
+.button-generic {
+    background-color: var(--theme-color-1); 
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;   
+    padding: 8px 16px;
+    text-align: center;
+    font-size: var(--base-font-size);
+    font-family: var(--font-1);
+}
+
+.button-generic:hover {
+    background-color: var(--theme-color-1-dark); 
+    color: var(--text-color);
+}
+
+.button-centered {
+    /* taken from https://www.w3schools.com/howto/howto_css_center_button.asp */
+    margin: 12px 0px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/* Top Navigation Bar */
+.top-nav {
+    /* add a custom background color to the top navigation bar */
+    background-color: var(--nav-bar-color);
+    overflow: hidden;
+  }
+  
+    /* Style each link in the navigation bar */
+    .top-nav a {
+    color: var(--text-color);
+    text-align: center;
+    padding: 4px 8px;
+    text-decoration: none;
+    font-size: var(--base-font-size);
+    }
+
+    /* Change the color of links on hover */
+    .top-nav a:hover {
+    background-color: var(--nav-bar-hover);
+    color: var(--text-color);
+    }
+
+    /* Highlight "active" page */
+    .top-nav a.active {
+    background-color: var(--nav-bar-hover);
+    color: var(--text-color);
+    }
+
+    .top-nav a.left-align {
+    float: left;
+    text-align: left;
+    color: var(--theme-color-1-light);
+    }
+
+    .top-nav a.right-align {
+    float: right;
+    text-align: right;
+    color: var(--theme-color-2-light);
+    }
+
+/* Welcome/Intro Section */ 
+.welcome-left {
+    float: left;
+    text-align: left;
+}
+
+.welcome-right {
+    float: right;
+    text-align: right;
+}
+
+.about-button {
+    background-color: var(--about-button-color); 
+}
+
+.about-button:hover {
+    background-color: var(--about-button-hover); 
+  }
+
+/* Projects Section */ 
+.projects-header {
+    color: var(--theme-color-1-dark);
+}
+
+.project-title {
+    color: var(--theme-color-1);
+}
+
+/* Interests Section */
+.interests-header {
+    color: var(--theme-color-2-dark);
+}
+.interest-title {
+    color: var(--theme-color-2);
+}
+
+/* Bottom Bar */
+.bottom-bar {
+    /* add a custom background color to the page end bar */
+    background-color: var(--nav-bar-color);
+    width: 100%;
+}
+
+.contact-button {
+    background-color: var(--contact-button-color); 
+}
+
+.contact-button:hover {
+    background-color: var(--contact-button-hover); 
+  }
