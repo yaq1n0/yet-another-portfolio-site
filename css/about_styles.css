@@ -2,11 +2,32 @@
 /* not strictly needed but good practice and helps with autocomplete */
 @import url(styles.css);
 
-/* details collapsible header */
-.about-collapsible {
+.welcome-left {
+    background: var(--site-black);
+    color: var(--theme-color-3-light);
+}
+
+/* <detail> collapsible header */
+.about-collapsible-header {
     background-color: var(--theme-color-3-light-translucent) ;
     color: var(--theme-color-3);
-    border-radius: 4px;
-    padding-left: 1%;
+    
+    font-weight: 400;
+    font-size: var(--large-font-size);
+    border-radius: 8px;
+    
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/* <detail> collapsible content */
+.about-collapsible {
+    background-color: var(--theme-color-3-light-translucent);
+    border-radius: 16px;
+
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1%;
 }
 
