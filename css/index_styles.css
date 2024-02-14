@@ -47,14 +47,14 @@
     color: var(--theme-color-1);
     width: 85%;
     padding-left: 10%;
-    padding-right: 0%;
+    padding-right: 5%;
 }
 
 .project-summary {
     text-align:left;
     width: 85%;
     padding-left: 10%;
-    padding-right: 0%;
+    padding-right: 5%;
 }
 
 /* Interests Section */
@@ -62,19 +62,19 @@
     color: var(--theme-color-2-dark);
     width: 90%;
     padding-left: 5%;
-    padding-right: 0%;
+    padding-right: 5%;
 }
 
 .interest-title {
     color: var(--theme-color-2);
     width: 85%;
     padding-left: 10%;
-    padding-right: 0%;
+    padding-right: 5%;
 }
 
 .interest-summary {
     text-align:left;
     width: 85%;
     padding-left: 10%;
-    padding-right: 0%;
+    padding-right: 5%;
 }
