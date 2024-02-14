@@ -11,19 +11,19 @@
 .welcome-left {
     float: left;
     text-align: left;
-    padding-left: 2%;
     color: var(--theme-color-3-light);
 }
 
 .welcome-right {
     float: right;
     text-align: right;
-    padding-right: 2%;
     color: var(--theme-color-3-light);
 }
 
 .welcome-paragraph {
-    padding-top: 10%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .about-button {
@@ -38,21 +38,43 @@
 /* Projects Section */
 .projects-header {
     color: var(--theme-color-1-dark);
-    padding-left: 2%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .project-title {
     color: var(--theme-color-1);
-    padding-left: 4%;
+    width: 85%;
+    padding-left: 10%;
+    padding-right: 0%;
+}
+
+.project-summary {
+    text-align:left;
+    width: 85%;
+    padding-left: 10%;
+    padding-right: 0%;
 }
 
 /* Interests Section */
 .interests-header {
     color: var(--theme-color-2-dark);
-    padding-left: 2%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 0%;
 }
 
 .interest-title {
     color: var(--theme-color-2);
-    padding-left: 4%;
+    width: 85%;
+    padding-left: 10%;
+    padding-right: 0%;
+}
+
+.interest-summary {
+    text-align:left;
+    width: 85%;
+    padding-left: 10%;
+    padding-right: 0%;
 }
