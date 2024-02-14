@@ -133,6 +133,10 @@ p {
     /* add a custom background color to the top navigation bar */
     background-color: var(--nav-bar-color);
     overflow: hidden;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
     .top-nav-left {
@@ -172,9 +176,8 @@ p {
     color: var(--theme-color-1-light);
     border: solid 2px var(--theme-color-1-light);
     border-radius: 8px;
-    margin-left: 1%;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
     }
 
     .top-nav a.right-align {
@@ -184,9 +187,8 @@ p {
     color: var(--theme-color-2-light);
     border: solid 2px var(--theme-color-1-light);
     border-radius: 8px;
-    margin-right: 1%;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
     }
 
 /* Bottom Bar */
