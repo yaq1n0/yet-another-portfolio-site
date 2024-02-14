@@ -198,8 +198,8 @@ h1 {
 
 .bottom-bar-text {
     font-weight: 500;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .contact-button {
