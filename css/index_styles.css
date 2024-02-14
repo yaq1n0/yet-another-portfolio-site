@@ -1,0 +1,38 @@
+/* Welcome/Intro Section */
+.welcome-left {
+    float: left;
+    text-align: left;
+}
+
+.welcome-right {
+    float: right;
+    text-align: right;
+}
+
+.about-button {
+    background-color: var(--about-button-color);
+}
+
+.about-button:hover {
+    background-color: var(--about-button-hover);
+}
+
+/* Projects Section */
+.projects-header {
+    color: var(--theme-color-1-dark);
+}
+
+.project-title {
+    color: var(--theme-color-1);
+    padding-left: 4%;
+}
+
+/* Interests Section */
+.interests-header {
+    color: var(--theme-color-2-dark);
+}
+
+.interest-title {
+    color: var(--theme-color-2);
+    padding-left: 4%;
+}
