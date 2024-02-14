@@ -177,6 +177,7 @@ p {
 
 .project-title {
     color: var(--theme-color-1);
+    padding-left: 4%;
 }
 
 /* Interests Section */
@@ -185,6 +186,7 @@ p {
 }
 .interest-title {
     color: var(--theme-color-2);
+    padding-left: 4%;
 }
 
 /* Bottom Bar */
