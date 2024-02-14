@@ -3,18 +3,30 @@
 /* for some reason, order doesn't matter in CSS, but imports do need to be first, which makes sense, but I don't like it :) */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
+* {
+    /* set wildcard (any) defaults */
+    font-weight: 200;
+}
+
 :root {
     /* universal font-families */
     --font-1: "JetBrains Mono", monospace; 
 
     /* universal site color variables */ 
-    --background-color: hsl(0, 0%, 10%);
-    --background-color-inverse: hsl(0, 0%, 90%);
-    --text-color: hsl(0, 0%, 90%);
-    --text-color-inverse: hsl(0, 0%, 10%);
+    --site-black: hsla(0, 0%, 10%, 1);
+    --site-white: hsla(0, 0%, 90%, 1);
 
-    --nav-bar-color: hsl(0, 0%, 15%);
-    --nav-bar-hover: hsl(0, 0%, 20%);
+    --background-color: var(--site-black);
+    --background-color-inverse: var(--site-white);
+
+    --text-color: var(--site-white);
+    --text-color-inverse: var(--site-black);
+    --text-color-bright: hsla(0, 0%, 100%, 1);
+
+    --nav-bar-color: hsla(220, 50%, 56%, 0.50);
+    --nav-bar-hover: hsla(0, 0%, 0%, 0.4);
+
+    --bottom-bar-color: var(--nav-bar-color);
 
     --theme-color-1-h: 210;
     --theme-color-1-s: 50%;
@@ -43,11 +55,10 @@
     --theme-color-2-light: hsla(var(--theme-color-2-h), var(--theme-color-2-s), calc(var(--theme-color-2-l) + 15%), var(--theme-color-2-a));
     --theme-color-3-light: hsla(var(--theme-color-3-h), var(--theme-color-3-s), calc(var(--theme-color-3-l) + 15%), var(--theme-color-3-a));
 
-    --about-button-color: var(--theme-color-3);
-    --about-button-hover: var(--theme-color-3-dark);
+    --theme-color-3-light-translucent: hsla(var(--theme-color-3-h), var(--theme-color-3-s), calc(var(--theme-color-3-l) + 15%), calc(var(--theme-color-3-a) - 0.9));
 
-    --contact-button-color: var(--theme-color-1);
-    --contact-button-hover: var(--theme-color-1-dark);
+    --contact-button-color: var(--theme-color-2);
+    --contact-button-hover: var(--theme-color-2-dark);
 
     /* "responsive" font sizing */ 
     /* 
@@ -59,22 +70,26 @@
     /* in theory max(<mininum size in pixels>, min(<scaling to viewport width>, <max size in pixels>)) */
     --base-font-size: max(16px, min(2vw, 24px));
     --large-font-size: max(20px, min(3vw, 48px));
+    --very-large-font-size: max(24px, min(4.5vw, 64px));
     --small-font-size: max(12px, min(2vw, 18px));
 }
 
 body {
+    margin: 0px;
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: var(--font-1);
     font-size: var(--base-font-size);
 }
 
+.title-text {
+    font-size: var(--very-large-font-size);
+    width: 100%;
+    font-weight: 800;
+}
 h1 {
     font-size: var(--large-font-size);
-    color: var(--theme-color-3-light);
-    float: left;
-    text-align: left;
-    padding-left: 2%;
+    font-weight: 400;
     width: 100%;
 }
 
@@ -84,29 +99,31 @@ p {
     width: 100%;
 }
 
+.collapsible-header {
+    font-size: var(--large-font-size);
+    width: 100%;
+}
+
 .button-generic {
     background-color: var(--theme-color-1); 
-    color: var(--text-color);
+    color: var(--text-color-bright);
     border: none;
     border-radius: 4px;   
     padding: 8px 16px;
     text-align: center;
     font-size: var(--base-font-size);
     font-family: var(--font-1);
+    font-weight: 600;
 }
 
 .button-generic:hover {
     background-color: var(--theme-color-1-dark); 
-    color: var(--text-color);
+    color: var(--text-color-bright);
 }
 
 .button-centered {
-    /* taken from https://www.w3schools.com/howto/howto_css_center_button.asp */
-    margin: 12px 0px;
     position: relative;
-    top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -116,8 +133,18 @@ p {
     /* add a custom background color to the top navigation bar */
     background-color: var(--nav-bar-color);
     overflow: hidden;
-  }
+}
+
+    .top-nav-left {
+        width: 70%;
+        float: left;
+    }
   
+    .top-nav-right {
+        width: 30%;
+        float: right;
+    }
+
     /* Style each link in the navigation bar */
     .top-nav a {
     color: var(--text-color);
@@ -143,23 +170,40 @@ p {
     float: left;
     text-align: left;
     color: var(--theme-color-1-light);
+    border: solid 2px var(--theme-color-1-light);
+    border-radius: 8px;
+    margin-left: 1%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
     }
 
     .top-nav a.right-align {
     float: right;
     text-align: right;
     color: var(--theme-color-2-light);
+    color: var(--theme-color-2-light);
+    border: solid 2px var(--theme-color-1-light);
+    border-radius: 8px;
+    margin-right: 1%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
     }
 
 /* Bottom Bar */
 .bottom-bar {
     /* add a custom background color to the page end bar */
-    background-color: var(--nav-bar-color);
+    background-color: var(--bottom-bar-color);
     width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.bottom-bar-text {
+    font-weight: 500;
 }
 
 .contact-button {
-    background-color: var(--contact-button-color); 
+    margin-top: 4%;
 }
 
 .contact-button:hover {

@@ -1,16 +1,34 @@
+
+/* not strictly needed but good practice and helps with autocomplete */
+@import url(styles.css);
+
+:root{
+--about-button-color: var(--theme-color-3);
+--about-button-hover: var(--theme-color-3-dark);
+}
+
 /* Welcome/Intro Section */
 .welcome-left {
     float: left;
     text-align: left;
+    padding-left: 2%;
+    color: var(--theme-color-3-light);
 }
 
 .welcome-right {
     float: right;
     text-align: right;
+    padding-right: 2%;
+    color: var(--theme-color-3-light);
+}
+
+.welcome-paragraph {
+    padding-top: 10%;
 }
 
 .about-button {
     background-color: var(--about-button-color);
+    margin-top: 24px;
 }
 
 .about-button:hover {
@@ -20,6 +38,7 @@
 /* Projects Section */
 .projects-header {
     color: var(--theme-color-1-dark);
+    padding-left: 2%;
 }
 
 .project-title {
@@ -30,6 +49,7 @@
 /* Interests Section */
 .interests-header {
     color: var(--theme-color-2-dark);
+    padding-left: 2%;
 }
 
 .interest-title {
