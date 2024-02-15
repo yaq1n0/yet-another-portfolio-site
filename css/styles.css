@@ -29,6 +29,8 @@
 
     --bottom-bar-color: var(--nav-bar-color);
 
+    --contact-bar-color: var(--nav-bar-color);
+
     --theme-color-1-h: 210;
     --theme-color-1-s: 50%;
     --theme-color-1-l: 66%;
@@ -144,7 +146,7 @@ h1 {
     /* add a custom background color to the top navigation bar */
     background-color: var(--nav-bar-color);
     overflow: hidden;
-    padding: 1% 5% 1% 5%;
+    padding: 0vw 5vw 0vw 5vw;
 }
 
     .top-nav-left {
@@ -159,16 +161,24 @@ h1 {
 
     /* Style each link in the navigation bar */
     .top-nav a {
+        text-decoration: none; /* remove default underline */
         color: var(--text-color);   
         padding: 4px 8px;
         text-align: center;
         font-size: var(--base-font-size);
+
+        border: solid 2px var(--theme-color-1-light);
+        border-radius: 8px;  
+
+        --nav-item-margin: max(8px, 0.5vw);
+        margin: var(--nav-item-margin);
     }
 
     /* Change the color of links on hover */
     .top-nav a:hover {
         background-color: var(--nav-bar-hover);
         color: var(--text-color);
+        
     }
 
     /* Highlight "active" page */
@@ -180,21 +190,14 @@ h1 {
     .top-nav a.left-align {
         float: left;
         text-align: left;
-        margin: 0.5vw 0.5vw 0.5vw 0.5vw;
         color: var(--theme-color-1-light);
 
-        border: solid 2px var(--theme-color-1-light);
-        border-radius: 8px;   
     }
 
     .top-nav a.right-align {
         float: right;
         text-align: right;
-        margin: 0.5vw 0.5vw 0.5vw 0.5vw;
         color: var(--theme-color-2-light);
-
-        border: solid 2px var(--theme-color-1-light);
-        border-radius: 8px;
     }
 
 /* Welcome Section */
