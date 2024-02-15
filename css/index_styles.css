@@ -6,23 +6,16 @@
 
 /* Welcome/Intro Section */
 .welcome-left {
-    float: left;
-    text-align: left;
     color: var(--theme-color-3-light);
 }
 
 .welcome-right {
-    float: right;
-    text-align: right;
     color: var(--theme-color-3-light);
 }
 
 .welcome-paragraph {
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    text-align: center;
 }
-
 .about-button {
     background-color: var(--about-button-color);
     margin-top: 24px;

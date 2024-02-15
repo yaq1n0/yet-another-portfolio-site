@@ -139,7 +139,6 @@ h1 {
     padding-right: 2%;
 }
 
-
 /* Top Navigation Bar */
 .top-nav {
     /* add a custom background color to the top navigation bar */
@@ -197,6 +196,21 @@ h1 {
         border: solid 2px var(--theme-color-1-light);
         border-radius: 8px;
     }
+
+/* Welcome Section */
+.welcome-left {
+    text-align: left;
+}
+
+.welcome-right {
+    text-align: right;
+}
+
+.welcome-paragraph {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
 /* Bottom Bar */
 .bottom-bar {
