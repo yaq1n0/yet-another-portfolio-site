@@ -1,7 +1,4 @@
 
-/* not strictly needed but good practice and helps with autocomplete */
-@import url(styles.css);
-
 :root{
 --about-button-color: var(--theme-color-3);
 --about-button-hover: var(--theme-color-3-dark);

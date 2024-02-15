@@ -123,6 +123,22 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
+.collapsible-generic {
+    border-radius: 16px;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1%;
+}
+
+.collapsible-generic-header {
+    font-weight: 400;
+    font-size: var(--large-font-size);
+    border-radius: 8px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
 
 /* Top Navigation Bar */
 .top-nav {
