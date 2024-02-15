@@ -28,9 +28,11 @@
 /* Projects Section */
 .projects-header {
     color: var(--theme-color-1-dark);
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    background-color: var(--theme-color-1-light-translucent);
+    border-radius: 24px;
+    width: 80vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 .project-title {
@@ -50,9 +52,11 @@
 /* Interests Section */
 .interests-header {
     color: var(--theme-color-2-dark);
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    background-color: var(--theme-color-2-light-translucent);
+    border-radius: 24px;
+    width: 80vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 .interest-title {
