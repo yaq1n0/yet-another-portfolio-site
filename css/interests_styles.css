@@ -5,12 +5,12 @@
 
 /* <detail> collapsible header */
 .collapsible-interests-header {
-    background-color: var(--theme-color-3-light-translucent) ;
-    color: var(--theme-color-3);
+    background-color: var(--theme-color-2-light-translucent) ;
+    color: var(--theme-color-2);
 }
 
 /* <detail> collapsible content */
 .collapsible-interests {
-    background-color: var(--theme-color-3-light-translucent);
+    background-color: var(--theme-color-2-light-translucent);
     border-radius: 16px;
 }
