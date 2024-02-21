@@ -1,6 +1,6 @@
 
 :root {
-    --contact-list-width: 80vw;
+    --contact-list-width: 60vw;
     --contact-list-height: min(120px, 12vw);
     --contact-list-item-width: min(80px, 8vw);
     --contact-list-item-height: var(--contact-list-item-width);

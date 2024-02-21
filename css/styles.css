@@ -79,10 +79,9 @@
     /* "responsive" font sizing 
     scale the max font size to 2% of the viewport width, but keep it above 12px and below 24px
     in theory max(<mininum size in pixels>, min(<scaling to viewport width>, <max size in pixels>)) */
-    --base-font-size: max(16px, min(2vw, 24px));
-    --large-font-size: max(20px, min(3vw, 48px));
-    --very-large-font-size: max(24px, min(4.5vw, 64px));
-    --small-font-size: max(12px, min(2vw, 18px));
+    --base-font-size: max(12px, min(2vw, 20px));
+    --large-font-size: max(16px, min(3vw, 48px));
+    --small-font-size: max(10px, min(1.5vw, 16px)); 
 }
 
 body {
@@ -97,7 +96,7 @@ body {
 }
 
 .title-text {
-    font-size: var(--very-large-font-size);
+    font-size: var(--large-font-size);
     font-weight: 800;
     width: 90%;
     padding-left: 5%;
@@ -149,9 +148,19 @@ h1 {
 .collapsible-generic-header {
     font-weight: 400;
     font-size: var(--large-font-size);
-    border-radius: 8px;
-    padding-left: 1%;
-    padding-right: 1%;
+    border-radius: 24px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+.collapsible-generic-subheading {
+    font-size: var(--large-font-size);
+    font-weight: 400;
+    padding-left: 4%;
+}
+
+.collapsible-generic-unordered-list {
+    padding-left: 5%;
 }
 
 /* Top Navigation Bar */
