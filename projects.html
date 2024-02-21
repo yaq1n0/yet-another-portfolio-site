@@ -35,29 +35,140 @@
         <div>
             <h1 class="title-text welcome-left"> Here are some of my projects </h1>
             <p class="welcome-paragraph"> 
-                This page will go through my projects that I want to highlight in a hopefully general-audience approachable fashion, as well as serve as further documentation for my GitHub projects. 
+                This page will highlight my most significant projects in a manner that should be approachable to both a general and technical audience. 
+                <br>It also has the secondary purpose of acting as secondary documentation for these projects in perpetuity. 
             </p>
         </div>
 
         <details class="collapsible-generic collapsible-projects" id="project0" open> 
             <summary class="collapsible-generic-header collapsible-projects-header"> This Website! </summary>
-            <p>
-                As you may notice, this website is extremely minimal compared to most other similar websites. This is an intentional design decisiona as I believe in functionality above all else. 
-            I believe that going over the design choices made for this website is a good case study into my current philosophy for software development. 
-            <br><br>
-            This website was made with the following 
-            This version of the code is all written from scratch while trying to use as much plain html and css as possible while retaining a responsive UI. 
 
-The website is designed to be as functional as possible while still being pleasing to the eye, without unnecessary web_bloat™ stuff such as unneccessary animations, resource hog JS frameworks and ridiculously long non-human readable files. 
-
-The code was written with clean code principles in mind, keeping in mind modularity, maintainability, scalability and most importantly SIMPLICITY! However, the code in this state was written in about 2 days as of writing this README.md, so it can definitely use some refactoring and cleanup. 
+            <br>
+            <text class="collapsible-generic-subheading"> Getting Started </text>
+            <p> 
+                After I finished my degree and began to look for a job, I realized that I would have to find a way to highlight my projects and experience beyond what could be reasonably detailed in a CV and cover letter. 
+                Every decent developer these days seems to have their own website, so I thought "how hard could it be" and got started researching how to go about creating one for myself. 
             </p>
+
+            <p>
+                I started by trying to define the functional goals for this website. 
+                <ul>
+                    <li> It should give people an idea of what I am like technically, professionally and personally. </li>
+                    <li> It should implicitly showcase my full-stack (ish) web development skill and design ideologies. </li>
+                    <li> It should list and explain what skills and experience I have, exhaustively if possible. </li>
+                    <li> It should document and explain my projects that I have on GitHub in a way that recruiters can understand. </li>
+                    <li> It should serve as further documentation for my GitHub projects, supplementing the readme.md files. </li>
+                    <li> It should showcase my personal interests in way that allows me to share my passions for these things, instead of just name dropping them in a CV. </li>
+                    <li> It should be a one-stop shop for people to find further information about me (link my socials and contact info). </li>
+                </ul>
+            </p>
+
+            <text class="collapsible-generic-subheading"> Initial Research, Abandoned Approaches </text>
+            <p>
+                I have been able to write HTML, CSS and pure JS since I was in middle school. 
+                This meant that I wouldn't have to learn the actual website development part much. 
+                <br>I also knew about website templates, which I initially thought about using to simplify the creation process. 
+                <br>I have also used Flutter to develop desktop apps before, and knew that Flutter could be used to create websites.
+                And in the worst case, I could also use React, Angular, Vue or any other one of the million JS frameworks. 
+            </p>
+
+            <p>
+                I tried to build a flutter example app for web, it didn't immediately work, so I gave up on it. 
+                I probably could've gotten it to work but in hindsight, 
+                I'm glad I didn't use a JS framework as it would just be unnecessary code  overhead and web bloat. 
+            </p>
+
+            <p> 
+                I moved on to looking at html/css/js templates. 
+                I found one called "Monica." which looked to fit the description. 
+                I read through the source code and got to work changing stuff and adding context. 
+                I got to a point where had a solid landing page and generic template to start working off of, when I had an epiphany. 
+            </p>
+
+            <text class="collapsible-generic-subheading"> A Minimalist Approach Begins </text>
+            <p>
+                First, I realized that once I really thought about the functional requirements of this site, I didn't actually need a template. 
+                Secondly, the template was incredibly bloated with unnecessary JS dependencies, fluff UI animations and source code that was unnecessarily convoluted 
+                (a single 5000 line styles.css file that was a pain to work with).     
+                Thirdly, I personally believe in minimalist design as well as clean, simple, to the point software. 
+            </p>
+
+            <p> 
+                Realizing all of this, I decided to see how long it would actually take me to create the framework for the website I had in mind from scratch. 
+                Building everything from scratch, but also wanting to retain responsive UI design meant that I had to learn a few bits of new HTML and CSS. 
+                I also implemented some basic good coding practices that the template didn't such as: 
+                <ul>
+                    <li> Creating global responsible font size variables. </li>
+                    <li> Creating global theme color variables and variations for them. </li>
+                    <li> Using entirely relative and responsive positioning, layout and sizing code. </li>
+                    <li> Having separate stylesheets for each page, to try and avoid having an massive abomination of a styles.css file. </li>
+                    <li> Using consistent polymorphism concepts for UI elements, so that they can be reused and repurposed site-wide </li>
+                </ul>
+                It took me around 3 hours to go from nothing to having a responsive skeleton with a generic page template, reaching feature parity with the template branch of the site. 
+            </p>
+
         </details><br>
 
         <details class="collapsible-generic collapsible-projects"  id="project1"> 
-            <summary class="collapsible-generic-header collapsible-projects-header"> My Degree Final Year Project </summary>
+            <summary class="collapsible-generic-header collapsible-projects-header"> My Degree Final Year Project (FYP) </summary>
+            <br>
+            <text class="collapsible-generic-subheading"> Intro </text>
+            <p> 
+                A final year project, also known as an honours project has 2 parts, the actual project and the accompanying dissertation/report. 
+                I might eventually add my dissertation here if there's enough interest but at thousands of words long, I doubt many people would read it fully. 
+                Therefore, I will try to summarize things for the sake of brevity and to only include what I believe to be most relevant. 
+            </p>
+
+            <text class="collapsible-generic-subheading"> Project Selection/Project Brief </text>
             <p>
-                Unfortunately, you have reached a part of this website I am yet to complete, do check back later for more content! :D
+                The FYP process for a BSc Computer Science at the University of Southampton begins with a selection process that allows you to select topics that you are interested in. 
+                Each project topic is tied to a supervisor, and while you can't directly select a supervisor, you can see who your supervisor is likely to be when you select your topic. 
+                Your choices are then put through a matching algorithm to match you with a supervisor. 
+            </p>
+
+            <p>
+                After you're allocated a project topic and supervisor, you can then discuss with them about their current areas of interest. 
+                Hopefully, you'll be able to find some common ground between something you want to do and something they are able to help you with. 
+                Within a few weeks of the first semester of your 3rd year, you are expected to select a project title and project brief. 
+            </p>
+
+            <p>
+                The conventional wisdom is to select a vague yet believable project title that you can then eventually refine and narrow down over time. 
+                This wisdom extends to the project brief, which you are expected to produce alongside it, detailing what you wish to do.   
+            </p>
+
+            <p>
+                I didn't have any strong feelings or inspiration as to what project I actually wanted to make.
+                However, I knew early on that I wanted to do something that would allow me to explore unfamiliar fields and try out some new technologies. 
+            </p>
+
+            <p>
+                Eventually, I decided on a project titled "an intelligent approach to navigation in environments with compliant obstacles". 
+                Now lets break down what this intentionally vague and pretentiously academic title actually means. 
+            </p>
+
+            <p>
+                Obstacle compliance is just the term used to describe how easy it would be to either disregard and move through or to push aside an obstacle. 
+                A good example of a highly compliant obstacle would be grass, a moderately compliant one being a small branch that can be pushed aside, and a non-compliant one being a large immovable rock. 
+            </p>
+
+            <p>
+                The general gist of the project is that autonomous navigation algorithms don't intrinsically understand object compliance. 
+                Theoretically, this can be achieved in the following ways: 
+                
+                <ul>
+                    <li> Hard coding compliance for expected obstacles: This requires the most developer/human effort, and is most likely to fail in the field </li>
+                    <li> Test and learn compliance details for obstacles on the fly: This takes relatively little human effort, and in theory accounts for everything that could possibly be encountered. </li>
+                    <li> Contextual AI: This wasn't really a thing that was on my mind as someone who wasn't really at the cutting edge of AI developments in 2023. 
+                        Though writing this in 2024, it would likely not be long until someone trains an AI model to associate recognized objects with physical characteristics like mass, coefficient of friction and compliance</li>
+                </ul>
+
+                Obviously, I wouldn't have hard coded compliance for a set of recognized obstacles and called that a day, so I decided on using the second approach. 
+            </p>
+
+            <text class="collapsible-generic-subheading"> Compliance testing </text>
+            <p>
+                As previously defined, compliance can be 
             </p>
         </details><br>
 
@@ -81,7 +192,7 @@ The code was written with clean code principles in mind, keeping in mind modular
     <div class="bottom-bar">
         <p class="bottom-bar-text">
         You have scrolled to the bottom of this page! <br><br>
-        Since you're down here, I figure you might want to know more about me, here's a button to my contact information page 
+        Since you've reached the bottom of a page full of all my projects, maybe you want to know more about me, here's a button to my contact information page. 
         </p>
         
         <a href="contact.html"><button class="button-generic button-centered contact-button"> Contact Me! </button></a>
