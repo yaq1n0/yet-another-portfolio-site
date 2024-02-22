@@ -296,19 +296,66 @@
 
         <details class="collapsible-generic collapsible-projects"  id="project2"> 
             <summary class="collapsible-generic-header collapsible-projects-header"> Structured Turtle Query Language (STQL) </summary>
-            <p>
-                NOTE: This part is still under construction
-            </p>
-
             <text class="collapsible-generic-subheading">Intro</text>
             <p>
                 As part of the second year of my computer science degree, I took the following modules:
                 <ul>
-                    <li>Theory of Computing</li>
-                    <li>Programming 3</li>
-                    <li>Programming Language Concepts</li>
+                    <li>Theory of Computing: Which covered computability and complexity theory</li>
+                    <li>Programming 3: Which covered functional programming in Haskell</li>
+                    <li>Programming Language Concepts: Which covered compiler/interpreter theory</li>
                 </ul>
-                You can read more about them in my modules breakdown <a href="about.html#degree-year2">here</a>.
+                You can read more about them in my modules breakdown <a href="about.html#degree-year2">here</a>.                
+            </p>
+
+            <p>
+                While those modules were technically separate, I have a strong hunch that they were all taught in the same year in order to provide the theoretical background required for the coursework. 
+                The coursework was meant to be done in a group of 3, and the goal was the design a Toy language and accompanying interpreter in Haskell. 
+            </p>
+
+            <text class="collapsible-generic-subheading">Coursework Scope</text>
+            <p>
+                The scope for the toy language was to act as a querying language for Turtle RDF files. 
+                The actual data type and file syntax is arbitrary, but if you'd like to learn more about it, <a href="https://www.w3.org/TR/turtle/">here</a>. 
+                The querying functionality was akin to a subset of common SQL-like functions, such as filtering, merging etc. 
+            </p>
+
+            <p>
+                The coursework was meant to be done in a group of 3. 
+                I proposed that we split it such that one person designs the Toy language and interpreter, one person does the underlying logic, and another person links the 2 together. 
+            </p>
+
+            <text class="collapsible-generic-subheading">Group Difficulties</text>
+            <p>
+                However, it turned out that one of my groupmates ended being incredibly uncooperative, not showing up to "scrum" meetings and ended up contributing less than 10% of the total group effort. 
+                The other 2 of us attempted to resolve this issue by helping to break down the tasks for him and make them more straightforward, followed by explaining out predicament to the Module Lead. 
+                Eventually, we realized that we were spending more time and effort trying to incorporate him into the workflows and agreed to simply pick up his responsibilities between the 2 of us, as we had a rapidly approaching deadline. 
+            </p>
+
+            <p>
+                Therefore, it ended up with me designing the Toy language, the accompanying interpreter and the interfacing code. 
+                While my other groupmate ended up implementing the entire backend functionality and the actual execution in Haskell. 
+            </p>
+
+            <text class="collapsible-generic-subheading">What My Groupmate Implemented</text>
+            <p>
+                Due to this division of duty, the 2 of us worked on roughly half of the total work amount each. 
+                However, my understanding of the backend functionality is limited as I let her do the backend independently. 
+                As I understand it, she used a Haskell library which did the raw interfacing with the Turtle files, and she implemented a bunch of high-level functions based on the low-level library functions. 
+                The end result being that she essentially provided me with an API that I can make function calls to from the interpreter.  
+            </p>
+
+            <text class="collapsible-generic-subheading">What I Implemented</text>
+            <p>
+                For my responsibilities, I designed the language around the library's functionality. 
+                As the library was initially meant to modify files, I realized that I wouldn't actually need to implement runtime variables and I could instead use intermediary files as pseudo-variables. 
+                The second thing I realized was that the actual functionality could be implemented using a combination of simpler functions rather than using a larger set of more complex functions. 
+                Essentially reducing the interpreter complexity at the "cost" of requiring more effort to write the code in the Toy language. 
+            </p>
+
+            <text class="collapsible-generic-subheading">About The Name</text>
+            <p>
+                Me and the other groupmate that actually did their part eventually realized the coincidental syntactic and functional similarity of our Toy language to SQL. 
+                Knowing that SQL stood for structured querying language, we then named our language structured turtle querying language, or STQL for short.
             </p>
         </details><br>
 
