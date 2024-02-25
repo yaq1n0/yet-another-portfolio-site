@@ -1,3 +1,6 @@
+# [DEPRECATED] old development repository for yaqinhasan.com
+this is where the source code for the abandoned monica template version and the alpha versions of the minimalist approach will be kept for posterity. 
+
 Welcome to the source code of yaqinhasan.com
 
 The rest of this readme file is just notes for where I can get the resources used in the site. 
