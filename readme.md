@@ -1,4 +1,4 @@
-# [DEPRECATED] old development repository for yaqinhasan.com
+# yaqinhasan.com - first implementation using templates and first minimalist (from scratch) implementations. 
 this is where the source code for the abandoned monica template version and the alpha versions of the minimalist approach will be kept for posterity. 
 
 Welcome to the source code of yaqinhasan.com
